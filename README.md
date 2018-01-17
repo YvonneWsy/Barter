@@ -1,4 +1,5 @@
 
+
 # Barter
 Barter is an Android app that provides a platform for people to trade items with other people.
 
@@ -57,7 +58,29 @@ The development of Barter is divided into three parts: Frontend, Server and Data
 
 * **Version Control**: Bitbucket is used for version controlling
 * **Testing**: For server, tests is written used flask test package, and also used coverage library to perform coverage test.
+               
                For GUI, a set of test cases are generated and tested manually
 * **Automation Build**: Jenkins is used for automation build
 
+---
+# Screenshots
 
+![](Screenshots/login.PNG)
+![](Screenshots/profile.PNG)
+![](Screenshots/user_main.PNG)
+![](Screenshots/inventory.PNG)
+![](Screenshots/item.PNG)
+![](Screenshots/add_item.PNG)
+![](Screenshots/search.PNG)
+![](Screenshots/browse.PNG)
+![](Screenshots/trade.PNG)
+![](Screenshots/offer_center.PNG)
+![](Screenshots/offer_1.PNG)
+![](Screenshots/offer_2.PNG)
+
+---
+### Contributors
+
+* Yvonne Wu - FrontEnd design & development
+* Yuan Tian - Server design & development
+* Gabby Xiong - Database design & development
