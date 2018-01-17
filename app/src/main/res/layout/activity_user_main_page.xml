@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yvonnewu.frontend.UserMainPageActivity">
+
+    <ImageView
+        android:id="@+id/profilePicUserMain"
+        android:layout_width="97dp"
+        android:layout_height="94dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/profile" />
+
+    <TextView
+        android:id="@+id/nameTVUserMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="58dp"
+        android:text="TextView"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.446"
+        app:layout_constraintLeft_toRightOf="@+id/profilePicUserMain"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="368dp"
+        android:layout_height="1dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="121dp"
+        android:background="@color/colorBlack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.009" />
+
+    <ImageButton
+        android:id="@+id/editProfileBtnUserMain"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="48dp"
+        android:background="@null"
+        app:layout_constraintEnd_toEndOf="@+id/editProfileTVUserMain"
+        app:layout_constraintStart_toStartOf="@+id/editProfileTVUserMain"
+        app:layout_constraintTop_toBottomOf="@+id/offerTVUserMain"
+        app:srcCompat="@drawable/editprofile" />
+
+    <TextView
+        android:id="@+id/editProfileTVUserMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="56dp"
+        android:text="@string/edit_profile"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editProfileBtnUserMain"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/inventoryBtnUserMain"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="24dp"
+        android:background="@null"
+        app:layout_constraintEnd_toEndOf="@+id/viewInventoryTVUserMain"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="@+id/viewInventoryTVUserMain"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:srcCompat="@drawable/inventory" />
+
+    <TextView
+        android:id="@+id/viewInventoryTVUserMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/view_inventory"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/addItemBtnUserMain"
+        app:layout_constraintStart_toStartOf="@+id/addItemBtnUserMain"
+        app:layout_constraintTop_toBottomOf="@+id/inventoryBtnUserMain" />
+
+    <ImageButton
+        android:id="@+id/searchBtnUserMain"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="24dp"
+        android:background="@null"
+        app:layout_constraintEnd_toEndOf="@+id/searchTVUserMain"
+        app:layout_constraintStart_toStartOf="@+id/searchTVUserMain"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:srcCompat="@drawable/search" />
+
+    <TextView
+        android:id="@+id/searchTVUserMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/search_for_barter"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/offerBtnUserMain"
+        app:layout_constraintStart_toStartOf="@+id/offerBtnUserMain"
+        app:layout_constraintTop_toBottomOf="@+id/searchBtnUserMain" />
+
+    <ImageButton
+        android:id="@+id/offerBtnUserMain"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="48dp"
+        android:background="@null"
+        app:layout_constraintEnd_toEndOf="@+id/offerTVUserMain"
+        app:layout_constraintStart_toStartOf="@+id/offerTVUserMain"
+        app:layout_constraintTop_toBottomOf="@+id/searchTVUserMain"
+        app:srcCompat="@drawable/offer" />
+
+    <TextView
+        android:id="@+id/offerTVUserMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/view_offer"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/editProfileBtnUserMain"
+        app:layout_constraintStart_toStartOf="@+id/editProfileBtnUserMain"
+        app:layout_constraintTop_toBottomOf="@+id/offerBtnUserMain" />
+
+    <ImageButton
+        android:id="@+id/logoutBtnUserMain"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="48dp"
+        android:background="@null"
+        app:layout_constraintEnd_toEndOf="@+id/logoutTVUserMain"
+        app:layout_constraintStart_toStartOf="@+id/logoutTVUserMain"
+        app:layout_constraintTop_toBottomOf="@+id/addItemTVUserMain"
+        app:srcCompat="@drawable/logout" />
+
+    <TextView
+        android:id="@+id/logoutTVUserMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="56dp"
+        android:text="@string/log_out_usermain"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoutBtnUserMain"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/addItemBtnUserMain"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="48dp"
+        android:background="@null"
+        app:layout_constraintEnd_toEndOf="@+id/addItemTVUserMain"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="@+id/addItemTVUserMain"
+        app:layout_constraintTop_toBottomOf="@+id/viewInventoryTVUserMain"
+        app:srcCompat="@drawable/additem" />
+
+    <TextView
+        android:id="@+id/addItemTVUserMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_item"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/logoutBtnUserMain"
+        app:layout_constraintStart_toStartOf="@+id/logoutBtnUserMain"
+        app:layout_constraintTop_toBottomOf="@+id/addItemBtnUserMain" />
+
+</android.support.constraint.ConstraintLayout>

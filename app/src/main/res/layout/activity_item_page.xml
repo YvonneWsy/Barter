@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yvonnewu.frontend.ItemPageActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/itemImageI"
+            android:layout_width="308dp"
+            android:layout_height="238dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/itemTitleStatTxtI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="28dp"
+            android:background="@color/colorLightBlue"
+            android:text="TITLE"
+            android:textColor="@color/colorBlack"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/itemImageI" />
+
+        <TextView
+            android:id="@+id/itemTitleDynTxtI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="28dp"
+            android:text="Title"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/itemCatDynTxtI"
+            app:layout_constraintTop_toBottomOf="@+id/itemImageI" />
+
+        <TextView
+            android:id="@+id/itemCatStatTxtI"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginTop="28dp"
+            android:background="@color/colorLightBlue"
+            android:text="CATEGORY"
+            android:textColor="@color/colorBlack"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/itemTitleStatTxtI"
+            app:layout_constraintTop_toBottomOf="@+id/itemTitleStatTxtI" />
+
+        <TextView
+            android:id="@+id/itemCatDynTxtI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Category"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/itemDesDynTxtI"
+            app:layout_constraintTop_toBottomOf="@+id/itemTitleDynTxtI" />
+
+        <TextView
+            android:id="@+id/itemDesStatTxtI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="28dp"
+            android:background="@color/colorLightBlue"
+            android:text="DESCRIPTION"
+            android:textColor="@color/colorBlack"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/itemOwnerStatTxtI"
+            app:layout_constraintStart_toStartOf="@+id/itemCatStatTxtI"
+            app:layout_constraintTop_toBottomOf="@+id/itemCatStatTxtI"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/itemDesDynTxtI"
+            android:layout_width="166dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Here goes the Item Description\nDescription is from the Data Base"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/itemOwnerPicI"
+            app:layout_constraintTop_toBottomOf="@+id/itemCatDynTxtI" />
+
+        <TextView
+            android:id="@+id/itemOwnerStatTxtI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:background="@color/colorLightBlue"
+            android:text="OWNER"
+            android:textColor="@color/colorBlack"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/itemDesStatTxtI"
+            app:layout_constraintTop_toBottomOf="@+id/itemDesDynTxtI" />
+
+        <ImageView
+            android:id="@+id/itemOwnerPicI"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="28dp"
+            app:layout_constraintEnd_toEndOf="@+id/itemOwnerName"
+            app:layout_constraintStart_toStartOf="@+id/itemOwnerName"
+            app:layout_constraintTop_toBottomOf="@+id/itemDesDynTxtI"
+            app:srcCompat="@drawable/profile" />
+
+        <TextView
+            android:id="@+id/itemOwnerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:gravity="center_horizontal"
+            android:text="Owner Name"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.621"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/itemOwnerPicI"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/viewOwnerInventoryBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="34dp"
+            android:text="View Owner\nInventory"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toTopOf="@+id/makeOfferBtn"
+            app:layout_constraintHorizontal_bias="0.41"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/itemOwnerPicI"
+            app:layout_constraintTop_toBottomOf="@+id/itemOwnerStatTxtI"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/makeOfferBtn"
+            android:layout_width="297dp"
+            android:layout_height="43dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:text="MAKE OFFER WITH THIS ITEM"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/itemOwnerName" />
+
+        <Button
+            android:id="@+id/deleteItemBtn"
+            android:layout_width="297dp"
+            android:layout_height="43dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:text="DELETE THIS ITEM FROM INVENTORY"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/itemOwnerName" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

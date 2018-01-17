@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">FrontEnd</string>
+    <string name="action_logout">Log Out</string>
+    <string name="action_goHome">Go To Home Page</string>
+    <string name="not_login">"Sorry, We are enable to log you in through Google</string>
+    <string name="serverFail">"Oops"</string>
+    <string name="itemCatSelecWarning">Please Select An Item Category To Continue</string>
+    <string name="galleryType">image/*</string>
+    <string name="itemCountMsg">Number of Item in Inventory</string>
+    <string name="searchTitleDescription">image to display the page title</string>
+    <string name="searchPicDescription">simple image to optimize the GUI of search page</string>
+    <string name="action_search">Go To Search Page</string>
+    <string name="action_addItem">Add Item to Inventory</string>
+    <string name="checkFieldsAlert">Please make sure Red Highlighted Fields are filled in</string>
+    <string name="okBtnAlert">OK</string>
+    <string name="edit_profile">EDIT PROFILE</string>
+    <string name="view_inventory">VIEW INVENTORY</string>
+    <string name="search_for_barter">SEARCH FOR BARTER</string>
+    <string name="view_offer">VIEW OFFER</string>
+    <string name="log_out_usermain">LOG OUT</string>
+    <string name="add_item">ADD ITEM</string>
+    <string name="no_selection_warning">Please make a selection to make offer</string>
+    <string name="negotiable_item_instr">Above items are offered to trade with MAIN ITEM\nand are negotiable</string>
+    <string name="mainItemInstr">Above item is the item to be traded and cannot be changed for this offer</string>
+    <string name="offer_selection">Please Select the Offer You Want To See Detail About</string>
+    <string-array name="item_category_array">
+        <item>Electronics</item>
+        <item>Shoes</item>
+        <item>Clothes</item>
+        <item>Furniture</item>
+        <item>Books</item>
+        <item>Others</item>
+    </string-array>
+    <string-array name="search_array">
+        <item>Electronics</item>
+        <item>Shoes</item>
+        <item>Clothes</item>
+        <item>Furniture</item>
+        <item>Books</item>
+        <item>Others</item>
+        <item>All</item>
+    </string-array>
+</resources>

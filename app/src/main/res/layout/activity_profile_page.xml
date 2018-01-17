@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yvonnewu.frontend.ProfilePageActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolBarProfile"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:background="@color/colorLightBlue"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PROFILE"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </android.support.v7.widget.Toolbar>
+
+        <ImageView
+            android:id="@+id/userPicProfile"
+            android:layout_width="141dp"
+            android:layout_height="192dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolBarProfile"
+            app:srcCompat="@drawable/profile" />
+
+        <ImageView
+            android:id="@+id/nameIconProfile"
+            android:layout_width="30dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="28dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/instrTVProfile"
+            app:srcCompat="@drawable/person" />
+
+        <TextView
+            android:id="@+id/nameTVProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:text="NAME"
+            android:textColor="@color/colorBlack"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/nameIconProfile"
+            app:layout_constraintEnd_toStartOf="@+id/nameETProfile"
+            app:layout_constraintStart_toEndOf="@+id/nameIconProfile"
+            app:layout_constraintTop_toTopOf="@+id/nameIconProfile" />
+
+        <EditText
+            android:id="@+id/nameETProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="39dp"
+            android:ems="10"
+            android:hint="User Name"
+            android:inputType="textPersonName"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/nameTVProfile"
+            app:layout_constraintStart_toStartOf="@+id/emailETProfile"
+            app:layout_constraintTop_toTopOf="@+id/nameTVProfile" />
+
+        <ImageView
+            android:id="@+id/emailIconProfile"
+            android:layout_width="30dp"
+            android:layout_height="34dp"
+            app:layout_constraintBottom_toBottomOf="@+id/emailTVProfile"
+            app:layout_constraintStart_toStartOf="@+id/nameIconProfile"
+            app:layout_constraintTop_toTopOf="@+id/emailTVProfile"
+            app:srcCompat="@drawable/mail" />
+
+        <TextView
+            android:id="@+id/emailTVProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:text="EMAIL"
+            android:textColor="@color/colorBlack"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/emailETProfile"
+            app:layout_constraintEnd_toStartOf="@+id/emailETProfile"
+            app:layout_constraintStart_toEndOf="@+id/emailIconProfile"
+            app:layout_constraintTop_toTopOf="@+id/emailETProfile" />
+
+        <EditText
+            android:id="@+id/emailETProfile"
+            android:layout_width="189dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="32dp"
+            android:ems="10"
+            android:hint="Email Address"
+            android:inputType="textImeMultiLine|textEmailAddress"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/phoneETProfile"
+            app:layout_constraintTop_toBottomOf="@+id/nameETProfile" />
+
+        <ImageView
+            android:id="@+id/phoneIconProfile"
+            android:layout_width="30dp"
+            android:layout_height="34dp"
+            app:layout_constraintBottom_toBottomOf="@+id/phoneTVProfile"
+            app:layout_constraintStart_toStartOf="@+id/emailIconProfile"
+            app:layout_constraintTop_toTopOf="@+id/phoneTVProfile"
+            app:srcCompat="@drawable/phone" />
+
+        <TextView
+            android:id="@+id/phoneTVProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:text="PHONE"
+            android:textColor="@color/colorBlack"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/phoneETProfile"
+            app:layout_constraintEnd_toStartOf="@+id/phoneETProfile"
+            app:layout_constraintStart_toEndOf="@+id/phoneIconProfile"
+            app:layout_constraintTop_toTopOf="@+id/phoneETProfile" />
+
+        <EditText
+            android:id="@+id/phoneETProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:ems="10"
+            android:hint="Phone number"
+            android:inputType="phone"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/locationETProfile"
+            app:layout_constraintTop_toBottomOf="@+id/emailETProfile" />
+
+        <ImageView
+            android:id="@+id/locationIconProfile"
+            android:layout_width="30dp"
+            android:layout_height="34dp"
+            app:layout_constraintBottom_toBottomOf="@+id/locationTVProfile"
+            app:layout_constraintStart_toStartOf="@+id/phoneIconProfile"
+            app:layout_constraintTop_toTopOf="@+id/locationTVProfile"
+            app:srcCompat="@drawable/location" />
+
+        <TextView
+            android:id="@+id/locationTVProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:text="LOCATION"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/locationETProfile"
+            app:layout_constraintEnd_toStartOf="@+id/locationETProfile"
+            app:layout_constraintStart_toEndOf="@+id/locationIconProfile"
+            app:layout_constraintTop_toTopOf="@+id/locationETProfile" />
+
+        <EditText
+            android:id="@+id/locationETProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="28dp"
+            android:layout_marginTop="32dp"
+            android:ems="10"
+            android:hint="City, Country"
+            android:inputType="textPersonName"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/phoneETProfile" />
+
+        <TextView
+            android:id="@+id/instrTVProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="240dp"
+            android:text="Please Fill In All Profile Information To Proceed"
+            android:textColor="@color/colorBlack"
+            android:textSize="14sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/toolBarProfile" />
+
+        <Button
+            android:id="@+id/saveBtnProfile"
+            android:layout_width="130dp"
+            android:layout_height="38dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:text="SAVE MY INFO"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/locationETProfile"
+            app:layout_constraintTop_toBottomOf="@+id/locationETProfile"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yvonnewu.frontend.OfferPageActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/offerNameTVO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="OFFER NAME:"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/itemToBarterTVO"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/offerNameTVEditO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:text="Name"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/offerNameTVO"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.235"
+            app:layout_constraintStart_toEndOf="@+id/offerNameTVO"
+            app:layout_constraintTop_toTopOf="@+id/offerNameTVO"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/itemToBarterTVO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="MAIN ITEM:"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/itemToBarterRVO"
+            app:layout_constraintTop_toBottomOf="@+id/offerNameTVO" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/itemToBarterRVO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toStartOf="@+id/MIInstrTVO"
+            app:layout_constraintTop_toBottomOf="@+id/itemToBarterTVO"
+            app:srcCompat="@android:drawable/ic_menu_report_image" />
+
+        <TextView
+            android:id="@+id/MIInstrTVO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/mainItemInstr"
+            app:layout_constraintStart_toStartOf="@+id/itemListTVO"
+            app:layout_constraintTop_toBottomOf="@+id/itemToBarterRVO" />
+
+        <TextView
+            android:id="@+id/itemListTVO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="NEGOTIABLE\nITEM(S):"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/NegItemRVO"
+            app:layout_constraintTop_toBottomOf="@+id/MIInstrTVO" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/NegItemRVO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toStartOf="@+id/NIInstrTVO"
+            app:layout_constraintTop_toBottomOf="@+id/itemListTVO" />
+
+        <TextView
+            android:id="@+id/NIInstrTVO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/negotiable_item_instr"
+            app:layout_constraintStart_toStartOf="@+id/statusTVO"
+            app:layout_constraintTop_toBottomOf="@+id/NegItemRVO" />
+
+        <TextView
+            android:id="@+id/statusTVO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="OFFER STATUS:"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/offerStatusTVEditO"
+            app:layout_constraintTop_toBottomOf="@+id/NIInstrTVO" />
+
+        <TextView
+            android:id="@+id/offerStatusTVEditO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="12dp"
+            android:text="Status"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/statusTVO" />
+
+        <Button
+            android:id="@+id/acceptBtnO"
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginTop="16dp"
+            android:text="ACCEPT"
+            app:layout_constraintEnd_toStartOf="@+id/declineBtnO"
+            app:layout_constraintTop_toBottomOf="@+id/offerStatusTVEditO" />
+
+        <Button
+            android:id="@+id/declineBtnO"
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="32dp"
+            android:text="DECLINE"
+            app:layout_constraintBottom_toBottomOf="@+id/acceptBtnO"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/acceptBtnO"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/NegBtnO"
+            android:layout_width="305dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="NEGOTIATE"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/acceptBtnO" />
+
+        <TextView
+            android:id="@+id/contactInfoTVO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="CONTACT INFO:"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/phoneTVO"
+            app:layout_constraintTop_toBottomOf="@+id/offerStatusTVEditO" />
+
+        <TextView
+            android:id="@+id/emailTVO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="EMAIL:"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/contactInfoInstrTVO"
+            app:layout_constraintTop_toBottomOf="@+id/phoneTVO" />
+
+        <TextView
+            android:id="@+id/emailEditTVO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="72dp"
+            android:text="email"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/emailTVO"
+            app:layout_constraintStart_toEndOf="@+id/emailTVO"
+            app:layout_constraintTop_toTopOf="@+id/emailTVO"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/phoneTVO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="PHONE:"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/emailTVO"
+            app:layout_constraintTop_toBottomOf="@+id/contactInfoTVO" />
+
+        <TextView
+            android:id="@+id/phoneEditTVO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="phone"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/phoneTVO"
+            app:layout_constraintStart_toStartOf="@+id/emailEditTVO"
+            app:layout_constraintTop_toTopOf="@+id/phoneTVO" />
+
+        <TextView
+            android:id="@+id/contactInfoInstrTVO"
+            android:layout_width="303dp"
+            android:layout_height="63dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="12dp"
+            android:text="You should contact the other user\nusing one of the above information to proceed your barter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailTVO" />
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

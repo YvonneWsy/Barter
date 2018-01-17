@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context ="com.example.yvonnewu.frontend.ProfilePageActivity">
+    <item
+        android:id="@+id/action_logOut"
+        android:title="@string/action_logout"
+        android:icon="@drawable/logout"
+        app:showAsAction="ifRoom"/>
+
+</menu>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yvonnewu.frontend.SearchPageActivity">
+
+    <TextView
+        android:id="@+id/locationFilterStatTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="28dp"
+        android:text="LOCATION"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/locationFilterEditTxt"
+        app:layout_constraintTop_toBottomOf="@+id/searchTitlePic" />
+
+    <EditText
+        android:id="@+id/locationFilterEditTxt"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:hint="Enter Location Here"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/catFilterStatTxt"
+        app:layout_constraintTop_toBottomOf="@+id/locationFilterStatTxt" />
+
+    <TextView
+        android:id="@+id/catFilterStatTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="ITEM\nCATEGORY"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintStart_toStartOf="@+id/catFilterSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/locationFilterEditTxt" />
+
+    <Spinner
+        android:id="@+id/catFilterSpinner"
+        android:layout_width="215dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/catFilterStatTxt"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/searchConfirmBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="SEARCH"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.896"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.984" />
+
+    <ImageView
+        android:id="@+id/searchPic"
+        android:layout_width="295dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="68dp"
+        android:contentDescription="@string/searchPicDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/searchcartoon" />
+
+    <ImageView
+        android:id="@+id/searchTitlePic"
+        android:layout_width="306dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/searchTitleDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchPic"
+        app:srcCompat="@drawable/searchtitle" />
+</android.support.constraint.ConstraintLayout>
