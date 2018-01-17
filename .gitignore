@@ -1,10 +1,9 @@
-TestAPI.py
-API.py
-TestCreateNewUser.sql
-TestCreateUser.py
-/BackEnd/ServerEnv
 /flaskr/flaskr/.coverage
 /flaskr/flaskr/image/
 /flaskr/flaskr/__pycache__/
+/flaskr/flaskr.egg-info/
 *.pyc
 *.log
+/.idea
+/image
+/src
