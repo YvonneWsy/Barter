@@ -1,0 +1,9 @@
+/flaskr/flaskr/.coverage
+/flaskr/flaskr/image/
+/flaskr/flaskr/__pycache__/
+/flaskr/flaskr.egg-info/
+*.pyc
+*.log
+/.idea
+/image
+/src
